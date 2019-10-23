@@ -35,13 +35,13 @@
       $("#mainNav").removeClass("navbar-shrink");
     }
   };
-  let href = location.href.split('public');
-  if(href[1] === '/' || href[1] === '/home'){
+  // let href = location.href.split('public');
+  // if(href[1] === '/' || href[1] === '/home'){
     // Collapse now if page is not at top
     navbarCollapse();
     // Collapse the navbar when page is scrolled
     $(window).scroll(navbarCollapse);
-  }
+  // }
 
 
   //sidebar

@@ -31,9 +31,11 @@
 <!-- Navigation -->
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-shrink" id="mainNav">
   <div class="container">
-    <!--<a class="navbar-brand js-scroll-trigger" href="{{ Route::currentRouteName() != '/' ? route('/') : '#page-top'}}">-->
-      <!--<img src="{{ asset('img/logo_horizontal.png') }}" height="35px" alt="logo_horizontal">-->
-    <!--</a>-->
+    <ul class="navbar-nav text-uppercase">
+      <li class="nav-item">
+        <a class="nav-link js-scroll-trigger" href="#page-top">PINGE BALI</a>
+      </li>
+    </ul>
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
       Menu
       <i class="fas fa-bars"></i>
@@ -47,6 +49,9 @@
           <a class="nav-link js-scroll-trigger" href="#galeri">Galeri</a>
         </li>
         <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#lokasi">Lokasi</a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link js-scroll-trigger" href="#kontak">Kontak</a>
         </li>
       </ul>
@@ -58,9 +63,9 @@
 <header class="masthead">
   <div class="container">
     <div class="intro-text">
-      <div class="intro-heading text-uppercase">Fresh Gallery</div>
-      <div class="intro-lead-in">Fresh for Everyone</div>
-      <a class="btn btn-outline-primary btn-xl text-uppercase js-scroll-trigger" href="#produk">lihat produk kami</a>
+      <div class="intro-heading text-uppercase">PINGE BALI</div>
+      <div class="intro-lead-in">Traditional Village</div>
+      <a class="btn btn-outline-primary btn-xl text-uppercase js-scroll-trigger" href="#tentang">tentang pinge bali</a>
     </div>
   </div>
 </header>
@@ -70,34 +75,32 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-12 text-center">
-        <h2 class="section-heading text-uppercase">Produk</h2>
-        <h3 class="section-subheading text-muted">3 jenis produk unggulan kami</h3>
+        <h2 class="section-heading text-uppercase">Tentang Pinge Bali</h2>
+        <h3 class="section-subheading text-muted">Traditional Village</h3>
       </div>
     </div>
-    <div class="row text-center">
-      <div class="col-md-4">
-        <img class="rounded-circle img-fluid" width="150px" src="{{ asset('img/buah.jpg') }}" alt="">
-        <h4 class="service-heading">Buah</h4>
-        <p class="text-muted">Fresh Gallery hadir dengan berbagai jenis buah hasil panen lokal pertanian</p>
-        <a href="{{ route('produk/viewDataGroup') }}">
-          <button class="btn btn-outline-primary">Selengkapnya</button>
-        </a>
+    <div class="row">
+      <div class="col-sm-6 pr-5 pl-5">
+        <div class="timeline-body">
+          <p class="text-muted">Desa Pinge, menjadi bagian wilayah Kec. Marga, Kab. Tabanan, terletak 17 km di sebelah Utara Kota Tabanan, kalau dari Bandara sekitar 1.5 jam berkendaraan mobil/ motor. Desa ini memiliki potensi cukup bagus bagi pelengkap objek-objek menarik di pulau Dewata ini, seperti keindahan sawah berundak, hutan hijau serta rumah tradisional penduduk terlihat unik, menjadikannya sebuah desa wisata yang kerap dikunjungi wisatawan.</p>
+        </div>
+        <div class="timeline-body">
+          <p class="text-muted">Beragam potensi pariwisata Desa Pinge, menambah daftar objek wisata di Bali untuk dikunjungi dan lebih memantapkan Bali menjadi tempat yang kaya akan destinasi wisata baik dari segi keindahan alam, budaya, tradisi serta kreasi seni unik warisan leluhurnya. Tempat-tempat yang bukan mainstream, sangat cocok bagi wisatawan yang sudah sering wisata ke Bali, tidak hanya menyaksikan tempat-tempat sama, tetapi juga berbagai tempat baru dengan keindahan yang mebuat anda berdecak kagum.</p>
+        </div>
+        <div class="timeline-body">
+          <p class="text-muted">Desa Pinge terletak di ketinggian 500 mdpl, membuat desa Pinge berhawa sejuk, berada di sini membuat pikiran menjadi tenang, hamparan sawah berundak membentang menghiasi daratan ini, begitu juga hutan tropis di sekelilingnya berpadu harmonis menciptakan lukisan alam tak tertandingi, membuat berdecak kagum setiap pengunjungnya. Keberadaan rumah tertata rapi serta sejajar dalam bentuk tradisional.</p>
+        </div>
       </div>
-      <div class="col-md-4">
-        <img class="rounded-circle img-fluid" width="150px" src="{{ asset('img/sayur.jpg') }}" alt="">
-        <h4 class="service-heading">Sayur</h4>
-        <p class="text-muted">Berbagai sayuran tersedia disini dan terjamin kesegarannya</p>
-        <a href="{{ route('produk/viewDataGroup') }}">
-          <button class="btn btn-outline-primary">Selengkapnya</button>
-        </a>
-      </div>
-      <div class="col-md-4">
-        <img class="rounded-circle img-fluid" width="150px" src="{{ asset('img/bibit.jpg') }}" alt="">
-        <h4 class="service-heading">Bibit</h4>
-        <p class="text-muted">Selain buah dan sayuran, kami juga menyediakan berbagai macam bibit berkualitas</p>
-        <a href="{{ route('produk/viewDataGroup') }}">
-          <button class="btn btn-outline-primary">Selengkapnya</button>
-        </a>
+      <div class="col-sm-6 pl-5 pr-5">
+        <div class="timeline-body">
+          <p class="text-muted">Peninggalan bersejarah dari pendahulunya dapat ditemukan di Pura Natar Jemeng. Di areal persawahan terdapat pura Beji, situasinya sangat tenang serta jauh dari keramaian, sehingga bagi para penekun dunia rohani, tempat seperti ini cocok untuk melakukan kegiatan meditasi, menyajikan suasana tenang, nyaman serta aura spiritual kental.</p>
+        </div>
+        <div class="timeline-body">
+          <p class="text-muted">Desa Pinge ini memang sekarang sudah menjadi desa wisata, sehingga jika anda ingin menapaki, tempat-tempat indah di desa ini, anda bisa sewa tempat menginap  di rumah tradisional milik penduduk. Akan tercipta nuansa beda dalam liburan, tatkala anda di ajak berbaur bersama penduduk desa, dengan rutinitas keseharian  penduduk setempat sebagai petani, serta bisa menyaksikan kegiatan mereka mulai dari membajak persawahan, pembibitan, menuai serta menaruh hasil panennya di lumbung padi.</p>
+        </div>
+        <div class="timeline-body">
+          <p class="text-muted">Juga proses pengairan dinamakan subak, sangat unik untuk diketahui. Kegiatan trekking keliling desa bersama pemandu juga telah disediakan. Dengan menginap serta mengikuti kegiata-kegiatan menarik yang disuguhkan desa ini, menjadikan nuansa berlibur anda berbeda dibandingan tempat lainnya.</p>
+        </div>
       </div>
     </div>
   </div>
@@ -107,114 +110,168 @@
 <section class="page-section" id="galeri" style="padding-top: 70px">
   <div class="container">
     <div class="row">
-      <div class="col-lg-12 text-center pb-4">
-        <h2 class="section-heading text-uppercase">Tentang kami</h2>
-        {{--<h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>--}}
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading text-uppercase">GALERI</h2>
+        <h3 class="section-subheading text-muted">Pinge Bali Traditional Village</h3>
       </div>
     </div>
-    <div class="row">
-      <div class="col-sm-6 pr-5 pl-5">
-        <div class="timeline-body">
-          <p class="text-muted">Fresh Gallery memiliki visi untuk menjadi layanan terbaik bagi petani lokal dalam memperbaiki sektor pertanian dengan pemanfaatan teknologi. Maka dari itu, kami memegang semangat "Fresh for Everyone", dimana kesegaran dalam hal apapun adalah hak semua orang.</p>
-        </div>
-        <div class="timeline-body">
-          <p class="text-muted">Misi kami: Menyediakan akses pasar dan pengembangan teknologi di bidang pertanian, menjaga kualitas produk pertanian, serta menyediakan informasi untuk petani muda karena menjadi petani itu keren.</p>
-        </div>
-        <div class="timeline-body">
-          <p class="text-muted">Untuk kedepannya, kami akan mengembangkan Agri-tech untuk memaksimalkan kualitas pertanian lokal karena kita adalah negara Agraris, petani adalah ujung tombak perekonomian kita.</p>
+    <div class="row text-center">
+      <div class="col-md-4 col-sm-6  mb-3 float-left">
+        <div class="card shadow mx-auto col-12 p-0">
+          <div class="card-body p-2">
+            <img class="img-fluid mx-auto" src="img/galeri1.jpeg" alt="pinge bali galeri 1">
+          </div>
         </div>
       </div>
-      <div class="col-sm-6 pl-5 pr-5">
-        <div class="timeline-body">
-          <p class="text-muted">Fresh Gallery terfokus pada produk buah dan sayur yang terjaga kualitasnya dan merupakan hasil pertanian lokal. Tim kami dengan setia akan mengantarkan hasil pertanian yang masih segar langsung ke konsumen. </p>
+      <div class="col-md-4 col-sm-6  mb-3 float-left">
+        <div class="card shadow mx-auto col-12 p-0">
+          <div class="card-body p-2">
+            <img class="img-fluid mx-auto" src="img/galeri2.jpeg" alt="pinge bali galeri 2">
+          </div>
         </div>
-        <div class="timeline-body">
-          <p class="text-muted">Fresh Gallery hadir untuk menjawab mimpi-mimpi petani untuk menikmati hasil yang adil dari hasil kerja keras mereka. Kami juga akan turut serta bekerja keras dalam melestarikan generasi petani.</p>
+      </div>
+      <div class="col-md-4 col-sm-6  mb-3 float-left">
+        <div class="card shadow mx-auto col-12 p-0">
+          <div class="card-body p-2">
+            <img class="img-fluid mx-auto" src="img/galeri3.jpeg" alt="pinge bali galeri 3">
+          </div>
         </div>
-        <div class="timeline-body">
-          <p class="text-muted">Dengan semangat "Fresh for Everyone", kami harap semangat ini juga ada pada diri Anda. Mari bergabung bersama kami untuk mengembalikan nama bahwa Indonesia adalah negara agraris.</p>
+      </div>
+      <div class="col-md-4 col-sm-6  mb-3 float-left">
+        <div class="card shadow mx-auto col-12 p-0">
+          <div class="card-body p-2">
+            <img class="img-fluid mx-auto" src="img/galeri4.jpeg" alt="pinge bali galeri 4">
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6  mb-3 float-left">
+        <div class="card shadow mx-auto col-12 p-0">
+          <div class="card-body p-2">
+            <img class="img-fluid mx-auto" src="img/galeri7.jpeg" alt="pinge bali galeri 7">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row text-center">
+      <div class="col-md-4 col-sm-6  mb-3 float-left">
+        <div class="card shadow mx-auto col-12 p-0">
+          <div class="card-body p-2">
+            <img class="img-fluid mx-auto" src="img/galeri6.jpeg" alt="pinge bali galeri 6">
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6  mb-3 float-left">
+        <div class="card shadow mx-auto col-12 p-0">
+          <div class="card-body p-2">
+            <img class="img-fluid mx-auto" src="img/galeri5.jpeg" alt="pinge bali galeri 5">
+          </div>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- Kontak -->
-<section class="page-section" id="kontak" style="padding-top: 160px; padding-bottom: 50px">
+<!-- Lokasi -->
+<section class="page-section" id="lokasi" style="padding-top: 20px">
   <div class="container">
     <div class="row">
       <div class="col-lg-12 text-center">
-        <h2 class="section-heading text-uppercase">Kontak kami</h2>
-        {{--<h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>--}}
+        <h2 class="section-heading text-uppercase">LOKASI</h2>
+        <h3 class="section-subheading text-muted mb-1">Banjar Dinas Pinge, Desa Baru, </h3>
+        <h3 class="section-subheading text-muted mb-4">Kecamatan Marga, Kabupaten Tabanan, Bali</h3>
+      </div>
+    </div>
+    <div class="row text-center">
+      <div class="col-12 mb-3 float-left">
+        <div class="card shadow mx-auto col-12 p-0">
+          <div class="card-body pb-0 pl-2 pt-2 pr-2">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d252615.39643514922!2d115.03896596465015!3d-8.390292700557303!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd226b7d965eb53%3A0x3483e1082db8d7c0!2sDESA%20WISATA%20PINGE!5e0!3m2!1sen!2sid!4v1571800131205!5m2!1sen!2sid" class="col-12 p-0" frameborder="0" style="border:0; min-height: 400px" allowfullscreen=""></iframe>
+          </div>
+        </div>
+      </div>
+      </div>
+  </div>
+</section>
+
+<!-- Kontak -->
+<section class="page-section" id="kontak" style="padding-top: 150px; padding-bottom: 50px; background: #212529;">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading text-uppercase text-white">Talk to us!</h2>
       </div>
     </div>
     <div class="row">
-      <div class="col"></div>
-      <div class="col-md-1">
-        <ul class="list-inline social-buttons text-center">
-          <li class="list-inline-item">
-            <a href="https://web.facebook.com/Fresh-Gallery-Bali-286563148707066/" target="_blank">
-              <i class="fab fa-facebook-f"></i>
-            </a>
-          </li>
-        </ul>
+      <div class="col-9 col-sm-8 col-md-6 col-lg-5 offset-2 offset-sm-3 offset-md-4 offset-lg-4 text-white p-2">
+        <div class="row">
+          <div class="col-1 offset-lg-1">
+            <i class="fas fa-user"></i>
+          </div>
+          <div class="col">
+            A. A. Ngurah Putra A.
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-1 offset-lg-1">
+            <i class="fas fa-phone"></i>
+          </div>
+          <div class="col">
+            +628123874570
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-1 offset-lg-1">
+            <i class="far fa-envelope"></i>
+          </div>
+          <div class="col">
+            junkwah77@yahoo.com
+          </div>
+        </div>
       </div>
-      <div class="col-md-3 pt-3">
-        <span class="text-white text-footer" onclick="window.open('https://web.facebook.com/Fresh-Gallery-Bali-286563148707066/', '_blank')">Fresh Gallery Bali</span>
-      </div>
-      <div class="col"></div>
     </div>
     <div class="row">
-      <div class="col"></div>
-      <div class="col-md-1">
-        <ul class="list-inline social-buttons text-center">
-          <li class="list-inline-item">
-            <a href="https://www.instagram.com/fresh.gallery.bali/" target="_blank">
-              <i class="fab fa-instagram"></i>
-            </a>
-          </li>
-        </ul>
+      <div class="col-9 col-sm-8 col-md-6 col-lg-5 offset-2 offset-sm-3 offset-md-4 offset-lg-4 text-white p-2">
+        <div class="row">
+          <div class="col-1 offset-lg-1">
+            <i class="fas fa-user"></i>
+          </div>
+          <div class="col">
+            I Wayan Dibia
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-1 offset-lg-1">
+            <i class="fas fa-phone"></i>
+          </div>
+          <div class="col">
+            +6285338310946
+          </div>
+        </div>
       </div>
-      <div class="col-md-3 pt-3">
-        <span class="text-white text-footer" onclick="window.open('https://www.instagram.com/fresh.gallery.bali/', '_blank')">fresh.gallery.bali</span>
-      </div>
-      <div class="col"></div>
     </div>
     <div class="row">
-      <div class="col"></div>
-      <div class="col-md-1">
-        <ul class="list-inline social-buttons text-center">
-          <li class="list-inline-item">
-            <a href="https://wa.me/6285964271302" target="_blank">
-              <i class="fab fa-whatsapp"></i>
-            </a>
-          </li>
-        </ul>
+      <div class="col-9 col-sm-8 col-md-6 col-lg-5 offset-2 offset-sm-3 offset-md-4 offset-lg-4 text-white p-2">
+        <div class="row">
+          <div class="col-1 offset-lg-1">
+            <i class="fas fa-user"></i>
+          </div>
+          <div class="col">
+            IB Mahadira Rizativa
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-1 offset-lg-1">
+            <i class="fas fa-phone"></i>
+          </div>
+          <div class="col">
+            +628155775999
+          </div>
+        </div>
       </div>
-      <div class="col-md-3 pt-3">
-        <span class="text-white text-footer" onclick="window.open('https://wa.me/6285964271302', '_blank')">085964271302</span>
-      </div>
-      <div class="col"></div>
-    </div>
-    <div class="row">
-      <div class="col"></div>
-      <div class="col-md-1">
-        <ul class="list-inline social-buttons text-center">
-          <li class="list-inline-item">
-            <a href="mailto:freshgallery.bali@gmail.com" target="_blank">
-              <i class="far fa-envelope"></i>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="col-md-3 pt-3">
-        <span class="text-white text-footer" onclick="window.open('mailto:freshgallery.bali@gmail.com', '_blank')">freshgallery.bali@gmail.com</span>
-      </div>
-      <div class="col"></div>
     </div>
     <div class="row text-center text-white">
-      <div class="col" style="padding-top: 150px">
-        <span class="copyright">Copyright &copy; Fresh Gallery 2019</span>
+      <div class="col" style="padding-top: 120px">
+        <span class="copyright">Copyright &copy; Pinge Bali 2019</span>
       </div>
     </div>
   </div>
